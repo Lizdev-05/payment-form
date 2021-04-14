@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+
+}
+
+   body{
+     background: linear-gradient(to top right, #6699ff 26%, #cc00ff 81%);
+       font-family: 'lato' 'roboto', sans-serif;
+   }
+
+   .wrapper{
+     width: 500px;
+     background: #fff;
+     padding: 25px;
+     margin: 25px auto 0;
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 5);
+     border-radius: 7px;
+   }
+.wrapper h2{
+  color: #cc00ff;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px dotted #333;
+}
+
+.wrapper h4{
+  color: #cc00ff;
+  padding-bottom: 5px;
+}
+
+ .input-group{
+  margin-bottom: 8px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+.input-box{
+  width: 100%;
+  margin-right: 12px;
+  position: relative;
+}
+
+
+.input-box:last-child{
+  margin-right: 0;
+}
+
+.name{
+
+padding: 14px 10px 14px 50px;
+width: 100%;
+background-color: #fcfcfc;
+border:1px solid black;
+outline: none;
+letter-spacing: 1px;
+transition: 0.3s;
+border-radius: 3px;
+color: #333;
+}
+
+.name:focus, .dob:focus{
+  -webkit-box-shadow:0 0 2px 1px;
+  -moz-box-shadow:0 0 2px 1px;
+  border: 1px solid #cc00ff;
+}
+
+.input-box .icon{
+  width: 40px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  color: #333;
+  border-radius: 2px 0 0 2px;
+  transition: 0.3s;
+  font-size: 20px;
+  pointer-events: none;
+  border: 1px solid black;
+  border-right: none;
+}
+
+.name:focus + .icon{
+  border-right: 1px solid #cc00ff;
+  border: none;
+  transition: 1s;
+  color: #fff;
+}
+
+.dob{
+  width: 30%;
+  padding: 14px;
+  text-align: center;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #fcfcfc;
+  border-radius: 3px;
+  background-color: #c0bfbf;
+}
+
+
+.radio{
+display: none;
+
+}
+
+.input-box label{
+  width: 40%;
+  padding: 13px;
+  background-color: #fcfcfc;
+  display:inline-block;
+  float: left;
+  text-align: center;
+  border: 1px solid #c0bfbf;
+
+}
+
+.input-box label:first-of-type{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: none;
+}
+
+.input-box label:last-of-type{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+}
+
+
+.radio:checked + label{
+  background-color:  #cc00ff;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.input-box select{
+  display: inline-block;
+  width: 50%;
+  background-color: #fff;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #c0bfbf;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+}
+
+
+
+.input-box select:focus{
+  background color:  #cc00ff;
+  color:  #cc00ff;
+  text-align: center;
+}
+
+button{
+  width: 100%;
+  background: transparent;
+  border: none;
+  background: #cc00ff;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.35s ease;
+}
+
+
+button:hover{
+  cursor: pointer;
+  background: #cc00ff;
+}
+/*.wrapper form  .input-group{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background: linear-gradient(to top right, #6699ff 26%, #cc00ff 81%);
+  padding: 10px;
+}
+.wrapper form  .input-group label {
+  width: 200px;
+  color: #757575;
+  border: 1px solid #d5dbd9;
+  margin-right: 10px;
+  font-size: 14px;
+
+}
+
+.wrapper form  .input-group .name{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+
+}
+
+.wrapper form  .input-group .input-box{
+  resize: none;
+  height: 125px:
+}
+
+/*
+.wrapper .input-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .input-group .input-box{
+  width: calc(100%/2 - 20px);
+  margin: 20px 0 12px 0
+
+}
+
+.input-group .input-box .name{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-group .input-box input{
+  height: 45px;
+  width: 100%;
+}
+
+
+
+
+
+
+/*body{
+  background: linear-gradient(to top right, #6699ff 26%, #cc00ff 81%);;
+  height: 70vw;
+  position: relative;
+}
+
+
+.wrapper{
+  background-color: #fff;
+   width: 400px;
+   height: 600px;
+   position: absolute;
+   border: 3px solid white;
+   margin: 5px;
+   top: 70px;
+
+}
